@@ -25,6 +25,6 @@ export class StudentDirectoryTableComponent implements OnInit {
   }
 
   ngOnInit() {
-    // this.loadStudentData();
+    this.loadStudentData();
   }
 }

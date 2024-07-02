@@ -2,6 +2,7 @@ import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { AbstractControl, FormControl, FormGroup, ReactiveFormsModule, ValidationErrors, Validators, FormBuilder } from '@angular/forms';
 import { initFlowbite } from 'flowbite';
+import { NavbarComponent } from '../navbar/navbar.component';
 
 function dateValidator(control: FormControl): { [key: string]: boolean } | null {
   const today = new Date();
@@ -45,7 +46,7 @@ function passwordMatchValidator(control: FormGroup): ValidationErrors | null {
 @Component({
   selector: 'app-user-form',
   standalone: true,
-  imports: [ReactiveFormsModule, CommonModule],
+  imports: [ReactiveFormsModule, CommonModule, NavbarComponent],
   templateUrl: './user-form.component.html',
   styleUrl: './user-form.component.css'
 })

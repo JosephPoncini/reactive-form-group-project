@@ -10,6 +10,8 @@ export class DataService {
   http = inject(HttpClient);
 
   getStudentData() {
-    return this.http.get<Student[]>(`https://formassignmentbackend.azurewebsites.net/User/GetAllUsers`)
+    let data = this.http.get<Student[]>(`https://formassignmentbackend.azurewebsites.net/Form/GetAllForms`);
+    console.log(data)
+    return data;
   }
 }

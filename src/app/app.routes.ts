@@ -5,6 +5,7 @@ import { ResetPasswordComponent } from './reset-password/reset-password.componen
 import { StudentDirectoryComponent } from './student-directory/student-directory.component';
 import { UserManagementComponent } from './user-management/user-management.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { RegistrationComponent } from './registration/registration.component';
 
 export const routes: Routes = [
     { path: '', redirectTo: 'login', pathMatch: 'full' },
@@ -14,4 +15,5 @@ export const routes: Routes = [
     { path: 'student-directory', component: StudentDirectoryComponent },
     { path: 'user-management', component: UserManagementComponent },
     { path: 'navbar', component: NavbarComponent },
+    { path: 'registration', component: RegistrationComponent },
   ];
